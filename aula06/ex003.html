@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: rgb(105, 105, 173);
-            color: white;
+            color: white; /*Comentário no CSS*/
             font: normal 20pt Arial;
         }
 
@@ -18,12 +18,15 @@
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo !</h1>
+    <h1>Olá, Mundo !</h1> <!--Isso é um comentário no HTML-->
     <p>Já me livrei da maldição</p>
     <script>
-        window.alert('Minha primeira mensagem!')
-        window.confirm('Está gostando de JS ?')
-        window.prompt('Qual é seu nome?')
+        var n1 = Number(window.prompt('Digite um número: ')) // String
+        var n2 = Number(window.prompt('Digite outro número: ')) // String
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' + String(s)) // Concatenação
+        // (number + number) para adição
+        // (string + string) para concatenção
     </script>
 </body>
 </html>
