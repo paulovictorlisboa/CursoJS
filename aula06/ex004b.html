@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+        font: normal 20pt Arial;
+       } 
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual é seu nome ?')
+        var salario_REAIS = Number(window.prompt('Qual é o seu salário? '))
+        var salario_EURO = salario_REAIS/5.26
+        var salario_DOLAR = salario_REAIS/5.06        
+        
+        salario_REAIS.toFixed(2).replace('.',',')
+        salario_EURO.toFixed(2).replace('.',',')
+        salario_DOLAR.toFixed(2).replace('.',',')
+
+        document.write(`Olá, <strong>${nome}!</strong><br> Seu salário em Reais é: ${salario_REAIS.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.<br>`) 
+
+        document.write(`Seu salário em Euros é: ${salario_EURO.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}.<br>`)
+
+        document.write(`Já, seu salário em Dólar é: ${salario_DOLAR.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}.`)
+    </script>
+</body>
+</html>
